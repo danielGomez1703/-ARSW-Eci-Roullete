@@ -23,7 +23,7 @@ public class Sala {
     private int resultadoRuleta;
     private int minApuesta;
     private int numSala;
-    private List<Jugador> jugadores;
+    private List<Usuario> jugadores;
     private List<String> historial;
     
     
@@ -60,11 +60,11 @@ public class Sala {
         this.numSala = numSala;
     }
 
-    public List<Jugador> getJugadores() {
+    public List<Usuario> getJugadores() {
         return jugadores;
     }
 
-    public void setJugadores(List<Jugador> jugadores) {
+    public void setJugadores(List<Usuario> jugadores) {
         this.jugadores = jugadores;
     }
 

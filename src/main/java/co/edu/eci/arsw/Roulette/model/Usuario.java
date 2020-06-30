@@ -5,35 +5,79 @@
  */
 package co.edu.eci.arsw.Roulette.model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author danip
  */
-public class Jugador {
-    
-    private int id;
-    private String apodo;
+
+@Entity()
+@Table(name = "usuario")
+public class Usuario implements Serializable {
+    @Id
+    private String email;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "saldo")
     private int saldo;
-    private int numJugador;
-
-    public Jugador(String apodo, int saldo) {
-        this.apodo = apodo;
-        this.saldo = saldo;
-    }
-
-    public Jugador(int id, String apodo, int saldo, int numJugador) {
-        this.id = id;
-        this.apodo = apodo;
-        this.saldo = saldo;
-    }
+    @Column (name="clave")
+    private String clave;
     
+    public Usuario() {}
+
+    public Usuario(String name, int saldo) {
+        this.name = name;
+        this.saldo = saldo;
+    }
+
+    public Usuario(String email, String name, String clave, int saldo) {
+        this.email=email;
+        this.name = name;
+        this.clave=clave;
+        this.saldo = saldo;
+    }
+
+   
+    
+
+  /*  @Override
+    public String toString() {
+        return "Nombre : "+this.name
+                + " saldo: " + this.saldo;//To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+       if (obj.getClass().equals(this.getClass())){
+           User jug = (User) obj;
+           if (jug.getCorreo().equals(this.email)){
+               return true;
+           }
+       }
+       return false;//To change body of generated methods, choose Tools | Templates.
+    }*/
+
+    public String getCorreo() {
+        return email;
+    }
+
+    public void setCorreo(String email) {
+        this.email = email;
+    }
 
     public String getApodo() {
-        return apodo;
+        return name;
     }
 
-    public void setApodo(String apodo) {
-        this.apodo = apodo;
+    public void setApodo(String name) {
+        this.name = name;
     }
 
     public int getSaldo() {
@@ -44,29 +88,12 @@ public class Jugador {
         this.saldo = saldo;
     }
 
-    public int getNumJugador() {
-        return numJugador;
+    public String getClave() {
+        return clave;
     }
 
-    public void setNumJugador(int numJugador) {
-        this.numJugador = numJugador;
-    }
-
-    @Override
-    public String toString() {
-        return "Nombre : "+this.apodo
-                + " saldo: " + this.saldo;//To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-       if (obj.getClass().equals(this.getClass())){
-           Jugador jug = (Jugador) obj;
-           if (jug.getApodo().equals(this.apodo)){
-               return true;
-           }
-       }
-       return false;//To change body of generated methods, choose Tools | Templates.
+    public void setClave(String clave) {
+        this.clave = clave;
     }
         
 }
