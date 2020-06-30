@@ -36,6 +36,16 @@ public class UserController {
             
         }
         
+      /*  @PostMapping("/addSala")
+        public String addUser(@RequestParam (value="correo") String numSala){
+            System.out.println("llega al back");
+            System.out.println(numSala);
+            Usuario usr  = new Sala("125abc",numsala);
+            System.out.println(userService.saveUser(usr));
+            return "redirect:/home.html";
+            
+        }
+        */
         
         @RequestMapping("/register")
         public String SignUp (){

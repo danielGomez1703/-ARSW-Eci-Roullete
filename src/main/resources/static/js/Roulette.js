@@ -191,5 +191,4 @@ class Roulette extends React.Component {
   }
 }
 
-ReactDOM.render(<Roulette options={options} baseSize={300} onComplete={handleOnComplete}/>, document.getElementById('root'));
-registerServiceWorker();
+export default Roulette;
