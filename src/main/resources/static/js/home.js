@@ -28,3 +28,7 @@ function LogUser(){
         }
 
  
+function irRegistrar(){
+      locate.href="/register.html";
+    
+}

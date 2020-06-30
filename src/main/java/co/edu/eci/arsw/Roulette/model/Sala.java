@@ -5,15 +5,27 @@
  */
 package co.edu.eci.arsw.Roulette.model;
 
+import java.io.Serializable;
 import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
  * @author danip
  */
-public class Sala {
+
+@Entity
+@Table(name ="salas")
+
+public class Sala implements Serializable{
     
-    private int idSala;
+    @Id
+    private String idSala;
+    @Column(name = "numsala")
+    private String numSala;
     
     private String[] tablero = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",
         "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29",
@@ -22,9 +34,15 @@ public class Sala {
     
     private int resultadoRuleta;
     private int minApuesta;
-    private int numSala;
+    
     private List<Usuario> jugadores;
     private List<String> historial;
+
+    public Sala(String idSala, String numSala) {
+        this.idSala = idSala;
+        this.numSala = numSala;
+    }
+    
     
     
 
@@ -52,11 +70,11 @@ public class Sala {
         this.minApuesta = minApuesta;
     }
 
-    public int getNumSala() {
+    public String getNumSala() {
         return numSala;
     }
 
-    public void setNumSala(int numSala) {
+    public void setNumSala(String numSala) {
         this.numSala = numSala;
     }
 
@@ -74,6 +92,14 @@ public class Sala {
 
     public void setHistorial(List<String> historial) {
         this.historial = historial;
+    }
+
+    public String getIdSala() {
+        return idSala;
+    }
+
+    public void setIdSala(String idSala) {
+        this.idSala = idSala;
     }
    
     

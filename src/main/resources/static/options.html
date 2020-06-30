@@ -11,9 +11,7 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />      
         <link rel="stylesheet" type="text/css" href="css/Styles.css" />
         <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <script  src="js/Roulette.js" />
         <script  src="js/home.js" />
-        
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
@@ -24,30 +22,24 @@ and open the template in the editor.
             <div class="modal-dialog text-center" >
 
                 <div class="modal-content">
+
+                    <h3 class="modal-title">Crear o Unirse</h3>
                     
-                    <h2 class="modal-title">Log-in</h2>
-                 
-                    
-                        <form class="col-12">
-                            <div class="modal-body">
+                    <p> en caso de que el numero de la sala ya exista sera informado </p>
+                    <form class="col-12">
+                        <div class="modal-body">
                             <div class="form-group">
 
-                                <input type="email" class="form-control" id="Correo"  placeholder="Enter email">
-                                    <small id="Correo" class="form-text text-muted">Recuerde revisar Mayusculas y Minusculas</small>
+                                <input type="text" class="form-control" id="numSala"  placeholder="Numero De Sala">
+
                             </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="Password" placeholder="Password">
-                            </div>
-                             </div>
-                      
-                            <button type="submit" class="btn btn-success">Log-in</button>
-                            <button type="submit" class="btn btn-dark" align="center" onClick="irRegistrar()">Sign-up</button>
-                            
-                        </form>
-                    </div>
-                
-                    <div id="root" ></div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Crear</button>
+                        <button type="submit" class="btn btn-dark" align="center">Unirse</button>
+
+                    </form>
                 </div>
+            </div>
             </div>
 
 

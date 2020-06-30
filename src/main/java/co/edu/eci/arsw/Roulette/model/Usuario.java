@@ -19,27 +19,27 @@ import javax.persistence.Table;
  */
 
 @Entity()
-@Table(name = "usuario")
+@Table(name = "usuarios")
 public class Usuario implements Serializable {
     @Id
     private String email;
-    @Column(name = "name")
-    private String name;
+    @Column(name = "APODO")
+    private String apodo;
     @Column(name = "saldo")
-    private int saldo;
+    private String saldo;
     @Column (name="clave")
     private String clave;
     
     public Usuario() {}
 
-    public Usuario(String name, int saldo) {
-        this.name = name;
+    public Usuario(String apodo, String saldo) {
+        this.apodo = apodo;
         this.saldo = saldo;
     }
 
-    public Usuario(String email, String name, String clave, int saldo) {
+    public Usuario(String email, String apodo, String clave, String saldo) {
         this.email=email;
-        this.name = name;
+        this.apodo = apodo;
         this.clave=clave;
         this.saldo = saldo;
     }
@@ -49,7 +49,7 @@ public class Usuario implements Serializable {
 
   /*  @Override
     public String toString() {
-        return "Nombre : "+this.name
+        return "Nombre : "+this.apodo
                 + " saldo: " + this.saldo;//To change body of generated methods, choose Tools | Templates.
     }
 
@@ -73,18 +73,18 @@ public class Usuario implements Serializable {
     }
 
     public String getApodo() {
-        return name;
+        return apodo;
     }
 
-    public void setApodo(String name) {
-        this.name = name;
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
     }
 
-    public int getSaldo() {
+    public String getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
+    public void setSaldo(String saldo) {
         this.saldo = saldo;
     }
 
