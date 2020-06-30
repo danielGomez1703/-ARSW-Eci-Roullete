@@ -59,6 +59,7 @@ si los jugadores llegan coincidir iran a un minijuego famoso como piedara-papel-
 la clase **usuario** es la representacion logica del cliente con sus credenciales con las cuales podra administrar o unirse a una sala y su saldo para poder apostar
 la clase **sala**  es la representacion logica de la sala donde se reuniran los usuarios  ahacer sus apuestas y a conversar
 la clase **Validator** es la clase que admiistrara los valores en el back de la ruleta, la cual se comunicara con esta clase para arrojar sus valores pod jugada y verificar las apuestas echas en la mesa
+
 ## Casos de Uso
 
 [link a sprint Backlog](https://tree.taiga.io/project/danielgomez1703-roulette-arsw/backlog) 
