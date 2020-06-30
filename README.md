@@ -29,6 +29,9 @@ para comenzar debe registrarse con su nombre o el alias que desee :
 
 posteriormente debe darle en registrar y elejir como desea jugar.
 
+![Registro](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/registro.png)
+
+Una vez registrado y con sesion iniciada ya podra escoger que desea hacer.
 
 ![Salas](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/elecSalas.png)
 

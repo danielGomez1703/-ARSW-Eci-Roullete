@@ -17,6 +17,8 @@ import javax.persistence.Table;
 /**
  *
  * @author danip
+ * 
+ * 4
  */
 @Entity
 @Table(name = "salas")
