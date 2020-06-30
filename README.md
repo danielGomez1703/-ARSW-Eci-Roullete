@@ -49,6 +49,10 @@ si los jugadores llegan coincidir iran a un minijuego famoso como piedara-papel-
 
 ![juego4](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/juego4.png)
 
+
+## Casos de Uso
+
+[link a sprint Backlog](https://tree.taiga.io/project/danielgomez1703-roulette-arsw/backlog) 
 ## Author
     Daniel Felipe Gomez Suarez
     
