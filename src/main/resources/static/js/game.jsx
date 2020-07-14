@@ -8,7 +8,7 @@
 function RouleteServiceURL() {
     var host = window.location.host;
     var sala = sessionStorage.getItem("sala");
-    var url = 'ws://' + (host) + '/game/'+sala;
+    var url = 'wss://' + (host) + '/game/'+sala;
     console.log("URL Calculada: " + url);
     return url;
 }
