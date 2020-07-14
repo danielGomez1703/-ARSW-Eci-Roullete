@@ -15,4 +15,6 @@ import co.edu.eci.arsw.Roulette.model.Usuario;
 public interface SalaService {
     public Boolean saveSala(Sala sala);
 
+    public Sala findById(String id);
+
 }

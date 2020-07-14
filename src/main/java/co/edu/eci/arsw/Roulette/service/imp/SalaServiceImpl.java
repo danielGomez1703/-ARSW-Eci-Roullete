@@ -33,5 +33,17 @@ public class SalaServiceImpl implements SalaService{
                return false;
           }
      }
+
+    @Override
+    public Sala findById(String id) {
+        try {
+            return salaRepository.findByNumsala(id);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }
     

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,21 +23,22 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Controller
 public class UserController {
-    
-      @Autowired    
-      UserService userService;
-     
-        @PostMapping("/addUser")
-        public String addUser(@RequestParam (value="correo") String correo,@RequestParam (value="password") String passwd,@RequestParam(value="apodo") String apodo){
-            System.out.println("llega al back");
-            System.out.println(correo+ " " + passwd + " " + apodo);
-            Usuario usr  = new Usuario(correo,apodo,passwd,"5000");
-            System.out.println(userService.saveUser(usr));
-            return "redirect:/home.html";
-            
-        }
-        
-      /*  @PostMapping("/addSala")
+
+    @Autowired
+    UserService userService;
+
+    @PostMapping("/addUsers")
+    @ResponseBody
+    public void addUser(@RequestParam(value = "correo") String correo, @RequestParam(value = "password") String passwd, @RequestParam(value = "apodo") String apodo) {
+        System.out.println("llega al back");
+        System.out.println(correo + " " + passwd + " " + apodo);
+        Usuario usr = new Usuario(correo, apodo, passwd, "5000");
+        System.out.println(userService.saveUser(usr));
+        return;
+
+    }
+
+    /*  @PostMapping("/addSala")
         public String addUser(@RequestParam (value="correo") String numSala){
             System.out.println("llega al back");
             System.out.println(numSala);
@@ -45,13 +47,6 @@ public class UserController {
             return "redirect:/home.html";
             
         }
-        */
-        
-        @RequestMapping("/register")
-        public String SignUp (){
-            System.out.println("entra al boton");
-            return "register";
-        }
-
+     */
 
 }

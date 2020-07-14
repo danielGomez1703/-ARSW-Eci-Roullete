@@ -1,56 +1,56 @@
 
-                <!DOCTYPE html>
-                <!--
-                To change this license header, choose License Headers in Project Properties.
-                To change this template file, choose Tools | Templates
-                and open the template in the editor.
-                -->
-                <html lang="es" xmlns="http://www.w3.org/1999/xhtml"
-                      xmlns:th="http://www.thymeleaf.org">
-                    <head>
-                        <title>Home</title>
-                         
-                        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-                        <link rel="stylesheet" type="text/css" href="css/Styles.css" /> 
-                         <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-                        <script  src="js/home.js" />  
-                                         
-                       
-                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-                        
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home</title>
 
-                                            </head>
-                    <body>
-                        
-                        <img src="img/Logo2.png"  class="rounded mx-auto d-block" alt="Logo del Jego">
-                            <div class="container text-center">   
-                                <h2 style="color:whitesmoke">Sign up</h2>  
-                                <div class="row justify-content-center"/>
-                                    
-         
-                                    <div class="col-8 mt-5 ">
-                                    <form >
-                                        <div class="form-group" >
-                                            <input type="email" class="form-control" id="Correo"  placeholder="Enter email">
-                                                <small id="Correo" class="form-text t"style="color: white" >Recuerde revisar Mayusculas y Minusculas</small>
-                                        </div>
-                                        
-                                          <div class="form-group">
-                                            <input type="text" class="form-control" id="Nombre"  placeholder="NickName">
-                                                <small id="nombre" class="form-text" style="color: white">Este es el nombre que aparecera en su perfil</small>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="inPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="verPassword" placeholder="verify password">
-                                        </div>
-                                        <button id="btnSubmit"  type="submit" class="btn btn-success" onclick="LogUser()" >Send</button>
-                                    </form>
-                                        </<div>
-                                </div>
-                            </div>
-                              
-                    </body>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/Styles.css" /> 
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+        <script  src="js/User.js" />  
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    </head>
+    <body>
+
+        <img src="img/Logo2.png"  class="rounded mx-auto d-block" alt="Logo del Jego">
+            <div class="container text-center">   
+                <h2 style="color:whitesmoke">Sign up</h2>  
+                <div class="row justify-content-center"/>
+
+
+                <div class="col-8 mt-5 ">
+                    <form >
+                        <div class="form-group" >
+                            <input type="email" class="form-control" id="Correo"  placeholder="Enter email">
+                                <small id="Correo" class="form-text t"style="color: white" >Recuerde revisar Mayusculas y Minusculas</small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="Nombre"  placeholder="NickName">
+                                <small id="nombre" class="form-text" style="color: white">Este es el nombre que aparecera en su perfil</small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="inPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="verPassword" placeholder="verify password">
+                        </div>
+                        <button id="btnSubmit"  type="button" class="btn btn-success" onclick="LogUser()" >Send</button>
+                    </form>
+                    </<div>
+                    </div>
+                </div>
+
+                </body>
                 </html>
