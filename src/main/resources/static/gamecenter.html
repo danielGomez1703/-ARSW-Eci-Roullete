@@ -9,19 +9,25 @@ and open the template in the editor.
     <head>
         <title>Home</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />      
-        <link rel="stylesheet" type="text/css" href="css/Styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/game.css" />
         <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
         <script  src="js/home.js" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>  
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
+        <script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+        
         <!-- Load babel to translate JSX to js. -->
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     </head>
     
     <body>
-        <script src="js/game.jsx" type="text/babel"></script>  
+        <script src="js/game.jsx" type="text/babel"></script>
+        <script src="js/Roulette.jsx"  type="text/babel"></script> 
+         <!--<script  data-main="js/Roulette.js" src="js/require.js" type="text/babel"></script> -->
         <div id ="game"></div>
+        <div id ="root"></div>
+        
     </body>
