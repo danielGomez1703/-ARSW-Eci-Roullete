@@ -192,7 +192,7 @@ class Roulette extends React.Component {
 
     return (
             
-      <div className="roulette"> HOLA MUNDO 
+      <div className="roulette"> 
         <div className="roulette-container">
           <canvas ref="canvas" width={baseSize * 2 } height={baseSize*2} className="roulette-canvas"></canvas>
         </div>
