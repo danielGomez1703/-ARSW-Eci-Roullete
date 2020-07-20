@@ -19,15 +19,16 @@ import javax.persistence.Table;
  */
 
 @Entity()
-@Table(name = "usuarios")
+
 public class Usuario implements Serializable {
     @Id
+    @GeneratedValue
     private String email;
-    @Column(name = "APODO")
+   // @Column(name = "APODO")
     private String apodo;
-    @Column(name = "saldo")
+   // @Column(name = "saldo")
     private String saldo;
-    @Column (name="clave")
+  //  @Column (name="clave")
     private String clave;
     
     public Usuario() {}
@@ -95,5 +96,5 @@ public class Usuario implements Serializable {
     public void setClave(String clave) {
         this.clave = clave;
     }
-        
+         
 }

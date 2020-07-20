@@ -12,13 +12,14 @@ import co.edu.eci.arsw.Roulette.repository.UserRepository;
 import co.edu.eci.arsw.Roulette.service.SalaService;
 import co.edu.eci.arsw.Roulette.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
  *
  * @author danip
  */
-@Service
+@Component
 public class SalaServiceImpl implements SalaService{
     
      @Autowired
@@ -27,7 +28,7 @@ public class SalaServiceImpl implements SalaService{
      @Override
      public Boolean saveSala(Sala sala) {
           try {
-               salaRepository.save(sala);
+               salaRepository.insert(sala);
                return true;
           } catch (Exception e) {
                return false;

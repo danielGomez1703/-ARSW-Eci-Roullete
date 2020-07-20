@@ -9,7 +9,7 @@ package co.edu.eci.arsw.Roulette.repository;
 
 import co.edu.eci.arsw.Roulette.model.Usuario;
 import java.util.List;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
@@ -19,12 +19,12 @@ import org.springframework.stereotype.Repository;
  * @author danip
  */
 
-@Repository
 @Component
-public interface UserRepository extends JpaRepository<Usuario, String>{
+public interface UserRepository extends MongoRepository<Usuario, String>{
 
     public Usuario findByEmail(String email);
 
     //public Usuario findByUsername(String username);
+
 
 }

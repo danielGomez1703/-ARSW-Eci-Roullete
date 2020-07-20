@@ -10,6 +10,7 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -21,12 +22,12 @@ import javax.persistence.Table;
  * 4
  */
 @Entity
-@Table(name = "salas")
 public class Sala implements Serializable {
     @Id
+    @GeneratedValue
     private String id;
     
-    @Column(name = "numsala")
+ //   @Column(name = "numsala")
     private String numsala;
     /*    
     private String[] tablero = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",

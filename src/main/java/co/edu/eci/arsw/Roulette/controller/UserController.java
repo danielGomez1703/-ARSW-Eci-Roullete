@@ -7,6 +7,8 @@ package co.edu.eci.arsw.Roulette.controller;
 
 import co.edu.eci.arsw.Roulette.model.Usuario;
 import co.edu.eci.arsw.Roulette.service.UserService;
+import javax.json.Json;
+import javax.json.JsonObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
@@ -38,7 +40,25 @@ public class UserController {
 
     }
 
-    /*  @PostMapping("/addSala")
+    @PostMapping("/logUser")
+    @ResponseBody
+    public String logIn(@RequestParam(value = "correo") String correo, @RequestParam(value = "password") String password){
+        boolean flag = false;
+        Usuario usr =  userService.findByEmail(correo);
+        System.out.println("usuario " + usr.getApodo());
+        if (usr != null){
+            if (usr.getClave().equals(password)){
+                flag = true;
+            }
+        }
+        String  resp = Json.createObjectBuilder()
+                .add("isLog", flag)
+                .build().toString();
+        System.out.println(resp);
+        return resp;
+    } 
+            
+  /*  @PostMapping("/addSala")
         public String addUser(@RequestParam (value="correo") String numSala){
             System.out.println("llega al back");
             System.out.println(numSala);

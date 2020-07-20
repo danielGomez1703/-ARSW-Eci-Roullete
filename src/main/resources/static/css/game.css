@@ -9,9 +9,127 @@ and open the template in the editor.
 */
 
 body {
-   background: url(../img/gameBack.jpg) no-repeat center top;
-   color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-   font-color: white;
+    background: url(../img/gameBack.jpg) no-repeat center top;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-color: white;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: 50px repeat(3, 201px) 50px;
+    grid-template-rows: repeat(1, 151px) 50px 50px;
+    grid-gap:.5px;
+    padding: 10px;
+}
+.table {
+
+
+}
+
+.zeroBlock{
+    display:grid;
+
+    grid-template-columns:50px;
+    grid-template-rows:151px;
+    grid-gap: .5px;
+    margin:0;   
+
+}
+
+.zeroButton{
+    color: white;
+    background: green;
+
+}
+.fstBlock {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: .5px;
+    margin:0;
+}
+
+.blockblack{
+    color: white;
+    background: black;
+}
+.blockred{
+    color: white;
+    background: red;
+}
+
+.rightSect {
+    display:grid;
+    grid-template-columns:50px;
+    grid-template-rows:repeat(3, 2fr);
+    grid-gap: .0px;
+}
+
+.rightBot{
+    background: -o-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: -moz-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: -webkit-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    height: 100%;
+    width: 100%;
+
+    color: white;
+}
+
+.downSect{
+    display:grid;
+    grid-template-columns:67px ;
+    grid-template-rows: repeat(2,51px);
+    margin-left: 50px;
+} 
+
+.downRange{
+    display:grid;
+    grid-template-columns: repeat(3,202px);
+    grid-template-rows:2fr;
+
+}
+
+.downRangeHalf{
+    display:grid;
+    grid-template-columns: repeat(6,101px);
+    grid-template-rows:2fr;
+
+}
+
+.downBot{
+    background: -moz-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: -webkit-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.downBot{
+    background: -moz-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: -webkit-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    background: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.redB{
+    color:white;
+    background-image:url(../img/bRed.png);
+    background-repeat:no-repeat;
+    height:100%;
+    width:100%;
+    background-position:center;
+}
+.blackB{
+    color:white;
+    background-image:url(../img/bBlack.png);
+    background-repeat:no-repeat;
+    height:100%;
+    width:100%;
+    background-position:center;
 }

@@ -11,6 +11,7 @@ import co.edu.eci.arsw.Roulette.repository.UserRepository;
 import co.edu.eci.arsw.Roulette.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
@@ -19,7 +20,7 @@ import org.springframework.stereotype.Service;
  */
 
 //@Configuration
-@Service
+@Component
 public class UserServiceImpl implements UserService{
     
      @Autowired
@@ -34,6 +35,20 @@ public class UserServiceImpl implements UserService{
                return false;
           }
      }
+     
+      
+     @Override
+     public Usuario findByEmail(String mail) {
+         Usuario usr = null;
+          try {
+               usr =  userRepository.findByEmail(mail);
+          } catch (Exception e) {
+              System.out.println( "error al  encontrar el usuario");
+          }
+          return usr;
+     }
+     
+     
 }
     
 

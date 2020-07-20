@@ -7,7 +7,7 @@ package co.edu.eci.arsw.Roulette.repository;
 
 import co.edu.eci.arsw.Roulette.model.Sala;
 import co.edu.eci.arsw.Roulette.model.Usuario;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
@@ -15,9 +15,9 @@ import org.springframework.stereotype.Repository;
  *
  * @author danip
  */
-@Repository
+
 @Component
-public interface SalaRepository extends JpaRepository< Sala, String>{
+public interface SalaRepository extends MongoRepository< Sala, String>{
 
     public Sala findByNumsala(String id);
 

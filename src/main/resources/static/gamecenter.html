@@ -17,17 +17,110 @@ and open the template in the editor.
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
         <script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
-        
+
         <!-- Load babel to translate JSX to js. -->
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
     </head>
-    
+
     <body>
+
+
+        </div>
         <script src="js/game.jsx" type="text/babel"></script>
         <script src="js/Roulette.jsx"  type="text/babel"></script> 
-         <!--<script  data-main="js/Roulette.js" src="js/require.js" type="text/babel"></script> -->
-        <div id ="game"></div>
-        <div id ="root"></div>
-        
+        <!--<script  data-main="js/Roulette.js" src="js/require.js" type="text/babel"></script> -->
+        <div id ="game"></div
+
+        <div class="container"> 
+
+            <div class="table" id ="tablero">
+
+                <div class ="zeroBlock">
+                    <button class="zeroButton" id ="0" value="0" ><span>0</span></button>
+                </div>
+                <div class="fstBlock">
+                    <button class="blockred" id ="3" value="3" ><span>3</span></button>
+                    <button class="blockblack" id ="6" value="6" >6</button>
+                    <button class="blockred" id ="9" value="9"  >9</button>
+                    <button class="blockred" id ="12" value="12" >12</button>
+
+                    <button class="blockblack" id ="2" value="2" >2</button>
+                    <button class="blockred" id ="5" value="5" >5</button>
+                    <button class="blockblack" id ="8" value="8" >8</button>
+                    <button class="blockblack"  id ="11" value="11" >11</button>
+
+                    <button class="blockred" id ="1" value="1" >1</button>
+                    <button class="blockblack" id ="4" value="4" >4</button>
+                    <button class="blockred" id ="7" value="7" >7</button>
+                    <button class="blockblack" id ="10" value="10" >10</button>
+                </div>
+                <div class="fstBlock">
+                    <button class="blockblack" id ="15" value="15" ><span>15</span></button>
+                    <button class="blockred" id ="18" value="18" >18</button>
+                    <button class="blockred" id ="21" value="21"  >21</button>
+                    <button class="blockblack" id ="24" value="124" >24</button>
+
+                    <button class="blockred" id ="14" value="14" >14</button>
+                    <button class="blockblack" id ="17" value="17" >17</button>
+                    <button class="blockblack" id ="20" value="20" >20</button>
+                    <button class="blockred"  id ="23" value="23" >23</button>
+
+                    <button class="blockblack" id ="13" value="13" >13</button>
+                    <button class="blockred" id ="16" value="16" >16</button>
+                    <button class="blockred" id ="19" value="19" >19</button>
+                    <button class="blockblack" id ="22" value="22" >22</button>
+                </div>
+
+                <div class="fstBlock">
+
+                    <button class="blockred" id ="26" value="26" ><span>27</span></button>
+                    <button class="blockred" id ="29" value="29" >30</button>
+                    <button class="blockblack" id ="32" value="32"  >33</button>
+                    <button class="blockred" id ="35" value="35" >36</button>
+
+                    <button class="blockblack" id ="2" value="2" >26</button>
+                    <button class="blockblack" id ="5" value="5" >29</button>
+                    <button class="blockred" id ="8" value="8" >32</button>
+                    <button class="blockblack"  id ="11" value="11" >35</button>
+
+                    <button class="blockred" id ="1" value="1" >25</button>
+                    <button class="blockblack" id ="4" value="4" >28</button>
+                    <button class="blockblack" id ="7" value="7" >31</button>
+                    <button class="blockred" id ="10" value="10" >34</button>
+                </div>
+                <!-- seccion lateral 1-2 -->
+
+                <div class="rightSect">
+                    <button class="rightBot" id ="11to2" value="11to2" >2to1</button>
+                    <button class="rightBot" id ="21to2" value="21to2" >2to1</button>
+                    <button class="rightBot" id ="31to2" value="31to2" >2to1</button>
+                </div>
+
+                <!-- seccion inferior  juego por sectores -->
+                <div class="downSect">
+                    <div class="downRange">
+                        <button class="downBot" id ="11to2" value="11to2" >1st 12</button>
+                        <button class="downBot" id ="21to2" value="21to2" >2nd 12</button>
+                        <button class="downBot" id ="31to2" value="31to2" >3rd 12</button> 
+                    </div>
+                    <div class="downRangeHalf">
+                        <button class="downBot" id ="1to18" value="1to18" >1-18</button>
+                        <button class="downBot" id ="even" value="even" >even</button>
+                        <button class="redB" id ="redB" value="red" >red</button> 
+                        <button class="blackB" id ="black" value="black" >black</button>
+                        <button class="downBot" id ="Odd" value="Odd" >Odd</button>
+                        <button class="downBot" id ="19to36" value="19to36" >19-36</button> 
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div id ="root"></div>
+
+
+
     </body>

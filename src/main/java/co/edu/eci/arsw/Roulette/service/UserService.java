@@ -6,7 +6,6 @@
 package co.edu.eci.arsw.Roulette.service;
 
 import co.edu.eci.arsw.Roulette.model.Usuario;
-
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,4 +17,5 @@ import org.springframework.stereotype.Service;
 
 public interface UserService {
     public Boolean saveUser(Usuario user);
+     public Usuario findByEmail(String mail);
 }
