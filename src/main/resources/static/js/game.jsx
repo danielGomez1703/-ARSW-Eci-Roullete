@@ -8,7 +8,7 @@
 function RouleteServiceURL() {
     var host = window.location.host;
     var sala = sessionStorage.getItem("sala");
-    var url = 'ws://' + (host) + '/game/'+sala;
+    var url = 'wss://' + (host) + '/game/'+sala;
     console.log("URL Calculada: " + url);
     return url;
 }
@@ -111,15 +111,7 @@ class Game extends React.Component {
         return (
                 <div>
                     <div className="container-fluid">
-                        <div className="row">
-                            <div className="input-group mb-3">
-                                <input type="text" className="form-control" name ="mensaje" placeholder="Enviar Mensaje ... " onChange={this.handleChange} />
-                                <div className="input-group-append">
-                                    <button className="btn btn-outline-secondary" type="submit" onClick= {this.publish}> Send </button>
-                                </div>
-                                <hr/>
-                            </div>
-                        </div>              
+                                    
                         <div className="row">
                             <div className="col-md-6">
                                 <ul className="list-group">RECIBIDOS:
@@ -144,6 +136,16 @@ class Game extends React.Component {
                             </div>
                 
                         </div>
+                        
+                        <div className="row">
+                            <div className="input-group mb-3">
+                                <input type="text" className="form-control" name ="mensaje" placeholder="Enviar Mensaje ... " onChange={this.handleChange} />
+                                <div className="input-group-append">
+                                    <button className="btn btn-outline-secondary" type="submit" onClick= {this.publish}> Send </button>
+                                </div>
+                                <hr/>
+                            </div>
+                        </div>  
                     </div>
                 </div>
 

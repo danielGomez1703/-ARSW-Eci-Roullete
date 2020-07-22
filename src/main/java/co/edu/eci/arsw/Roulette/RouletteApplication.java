@@ -22,5 +22,4 @@ public class RouletteApplication {
         //app.setDefaultProperties(Collections.singletonMap("server.port", getPort()));
         app.run(args);
     }
-
 }

@@ -16,13 +16,15 @@ body {
     font-color: white;
 }
 
-#tablero {
+.game-container{
+
     display: grid;
-    grid-template-columns: 50px repeat(3, 201px) 50px;
-    grid-template-rows: repeat(1, 151px) 50px 50px;
+    grid-template-columns: repeat(2, 400px) ;
+    grid-template-rows: repeat(2, 400px);
     grid-gap:.5px;
     padding: 10px;
 }
+
 .table {
 
 
@@ -30,7 +32,6 @@ body {
 
 .zeroBlock{
     display:grid;
-
     grid-template-columns:50px;
     grid-template-rows:151px;
     grid-gap: .5px;
@@ -39,11 +40,18 @@ body {
 }
 
 .zeroButton{
+    overflow: hidden;
+    position: static;
     color: white;
-    background: green;
+      background: -o-linear-gradient(rgba(0, 255, 0,0), rgba(0, 255, 0, .2), rgb(0, 255, 0));
+    background: -moz-linear-gradient(rgba(0, 255, 0, 0), rgba(0, 255, 0, .2), rgb(0, 255, 0));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgb(0, 0, 0));
+    background: linear-gradient(rgba(0, 255, 0, 0), rgba(0, 2550,0, .2), rgb(0, 255, 0));
 
 }
 .fstBlock {
+    
+
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3, 50px);
@@ -52,15 +60,28 @@ body {
 }
 
 .blockblack{
+   
+    border-color: white;
+    position: static;
     color: white;
-    background: black;
+     background: -o-linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0, .2), rgb(0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgb(0, 0, 0));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgb(0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgb(0, 0, 0));
 }
 .blockred{
+   
+    border-color: white;
+    position: static;
     color: white;
-    background: red;
+      background: -o-linear-gradient(rgba(255, 0, 0,0), rgba(255, 0, 0, .2), rgb(255, 0, 0));
+    background: -moz-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, .2), rgb(255, 0, 0));
+    background: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, .2), rgb(255, 0, 0));
+    background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, .2), rgb(255, 0, 0));
 }
 
 .rightSect {
+   
     display:grid;
     grid-template-columns:50px;
     grid-template-rows:repeat(3, 2fr);
@@ -68,10 +89,7 @@ body {
 }
 
 .rightBot{
-    background: -o-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: -moz-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: -webkit-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+   background-color: transparent;
     height: 100%;
     width: 100%;
 
@@ -93,6 +111,7 @@ body {
 }
 
 .downRangeHalf{
+    position: relative;
     display:grid;
     grid-template-columns: repeat(6,101px);
     grid-template-rows:2fr;
@@ -100,36 +119,69 @@ body {
 }
 
 .downBot{
-    background: -moz-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: -webkit-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
+    border-color: white;
+    position: relative;
+    background-color: transparent;
     height: 100%;
     width: 100%;
     color: white;
 }
 
-.downBot{
-    background: -moz-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: -webkit-linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    background: linear-gradient(rgba(50, 50, 50, .5), rgba(50, 50, 50, .75), rgb(50, 50, 50));
-    height: 100%;
-    width: 100%;
-    color: white;
-}
 
 .redB{
+    position: relative;
     color:white;
     background-image:url(../img/bRed.png);
     background-repeat:no-repeat;
     height:100%;
     width:100%;
+    backface-visibility:hidden;
     background-position:center;
+    border-color: white;
 }
 .blackB{
+    border-color: white;
+    position: relative;
     color:white;
     background-image:url(../img/bBlack.png);
     background-repeat:no-repeat;
     height:100%;
     width:100%;
     background-position:center;
+}
+
+.column {
+    border-color: white;
+    background: #666666;
+    float: left;
+    width: 20.33%;
+    padding: 15px;
+}
+
+.column2 {
+
+    float: right;
+    width: 50%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#tablero {
+
+    display: grid;
+    grid-template-columns: 50px repeat(3, 201px) 50px;
+    grid-template-rows: repeat(1, 151px) 50px 50px;
+    grid-gap:.5px;
+    padding: 10px;
+}
+
+#canvastable{
+    border: 1px solid black;
+
 }

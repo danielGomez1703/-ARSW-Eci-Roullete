@@ -25,9 +25,6 @@ public class Game {
     public Game() {
     }
     
-    
-    
-
     private Float WinNumber(int number, int mult) {
         if (RandomNumber == number) {
             return 3.6f * mult;
@@ -50,6 +47,7 @@ public class Game {
         }
 
     }
+    
     
     private Float WinDownSector(int number,int mult,int sector){
         List sec1 = Arrays.asList(horizontal1);

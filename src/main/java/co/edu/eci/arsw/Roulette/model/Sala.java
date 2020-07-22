@@ -6,6 +6,7 @@
 package co.edu.eci.arsw.Roulette.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -27,8 +28,10 @@ public class Sala implements Serializable {
     @GeneratedValue
     private String id;
     
- //   @Column(name = "numsala")
+
     private String numsala;
+    private ArrayList<Usuario> usuarios;
+    
     /*    
     private String[] tablero = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",
         "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29",
@@ -47,6 +50,11 @@ public class Sala implements Serializable {
     public Sala(String id, String numsala) {
         this.id = id;
         this.numsala = numsala;
+        usuarios = new ArrayList<> ();
+    }
+    
+    public void addUser(Usuario us){
+        usuarios.add(us);
     }
 
     public String getId() {
@@ -64,6 +72,7 @@ public class Sala implements Serializable {
     public void setNumsala(String numsala) {
         this.numsala = numsala;
     }
+    
 
     /*  public String[] getTablero() {
         return tablero;
@@ -112,4 +121,12 @@ public class Sala implements Serializable {
     public void setHistorial(List<String> historial) {
         this.historial = historial;
     }*/
+
+    public ArrayList<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(ArrayList<Usuario> usuarios) {
+        this.usuarios = usuarios;
+    }
 }

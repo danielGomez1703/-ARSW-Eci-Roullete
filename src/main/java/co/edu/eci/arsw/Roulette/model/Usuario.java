@@ -30,7 +30,7 @@ public class Usuario implements Serializable {
     private String saldo;
   //  @Column (name="clave")
     private String clave;
-    
+       
     public Usuario() {}
 
     public Usuario(String apodo, String saldo) {
@@ -64,7 +64,15 @@ public class Usuario implements Serializable {
        }
        return false;//To change body of generated methods, choose Tools | Templates.
     }*/
+     public String getEmail() {
+        return email;
+    }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    
     public String getCorreo() {
         return email;
     }

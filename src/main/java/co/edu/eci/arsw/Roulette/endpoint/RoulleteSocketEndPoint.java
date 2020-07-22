@@ -5,11 +5,14 @@
  */
 package co.edu.eci.arsw.Roulette.endpoint;
 
-import co.edu.eci.arsw.Roulette.model.Sala;
+/**
+ *
+ * @author danip
+ */
+
 import java.io.IOException;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.websocket.OnClose;
@@ -27,17 +30,16 @@ import org.springframework.stereotype.Component;
  * @author danip
  */
 @Component
-@ServerEndpoint("/game/{room}")
+@ServerEndpoint("/main/{room}")
 
-public class WebSocketEndPoint {
+public class RoulleteSocketEndPoint {
 
     //   @Autowired
     //   private SalaRepository salaService;
-    private static final Logger logger = Logger.getLogger(WebSocketEndPoint.class.getName());
+    private static final Logger logger = Logger.getLogger(RoulleteSocketEndPoint.class.getName());
+    
     //Queue for all open WebSocket sessions 
     static Queue<Session> queue = new ConcurrentLinkedQueue<>();
-    static CopyOnWriteArrayList <Sala>  salas = new CopyOnWriteArrayList<>();
-    
     Session ownSession = null;
 
     //Call this method to send a message to all clients
