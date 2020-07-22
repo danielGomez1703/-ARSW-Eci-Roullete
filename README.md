@@ -37,30 +37,41 @@ Una vez registrado y con sesion iniciada ya podra escoger que desea hacer.
 
 ahora el jugador se encontrara en la sala de apuestas, listo para comenzar el juego. alli podra comunicarse con sus amigos para comenzar el juego.
 
-![juego1](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/juego1.png)
+![juego1](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/esquema.PNG)
 
 
 una vez iniciado el juego los jugadores deberan apostar en sus tableros. es necesario que tengan un capital inicial para poder jugar. se identificaran las fichas de cada jugador con su respectivo color.
 
-![juego2](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/juego2.png)
+![juego2](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/apuesta.PNG)
 
 en caso de ganar el jugadr sera informado de forma publica.
 
-![juego3](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/juego3.png)
+![juego3](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/finJuego.PNG)
 
-si los jugadores llegan coincidir iran a un minijuego famoso como piedara-papel-tijera paraver quien se queda con las ganancias siempre y cuando ambos acpeten, de lo contrario el premio sera dividido
-
-![juego4](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/juego4.png)
+los jugadores tendran esapcios habilitados para comunicarse mediante texto;
+![juego3](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/chat.PNG)
 
 ## Modelo
 
 ![Modelo](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/Model.PNG)
+
+
 
 la clase **usuario** es la representacion logica del cliente con sus credenciales con las cuales podra administrar o unirse a una sala y su saldo para poder apostar
 
 la clase **sala**  es la representacion logica de la sala donde se reuniran los usuarios  ahacer sus apuestas y a conversar
 
 la clase **Validator** es la clase que admiistrara los valores en el back de la ruleta, la cual se comunicara con esta clase para arrojar sus valores pod jugada y verificar las apuestas echas en la mesa
+
+
+## Esquema
+
+    ![uc](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/uc.PNG)
+
+## Componentes
+
+    ![componentes](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/componentes.PNG)
+
 
 ## Casos de Uso
 

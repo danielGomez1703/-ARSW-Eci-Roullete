@@ -17,8 +17,8 @@ const {render} = ReactDOM;
 
 function RouleteServiceURL() {
     var host = window.location.host;
-    //var sala = sessionStorage.getItem("sala");
-    var url = 'wss://' + (host) + '/main/' + 1;
+    var sala = sessionStorage.getItem("sala");
+    var url = 'wss://' + (host) + '/main/' + sala;
     console.log("URL Calculada para el core: " + url);
     return url;
 }
