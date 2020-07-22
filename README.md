@@ -66,16 +66,17 @@ la clase **Validator** es la clase que admiistrara los valores en el back de la 
 
 ## Esquema
 
-    ![uc](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/uc.PNG)
+![uc](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/uc.PNG)
 
 ## Componentes
 
-    ![componentes](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/componentes.PNG)
+![componentes](https://github.com/danielGomez1703/-ARSW-Eci-Roullete/blob/master/resources/componentes.PNG)
 
 
 ## Casos de Uso
 
 [link a sprint Backlog](https://tree.taiga.io/project/danielgomez1703-roulette-arsw/backlog) 
+
 ## Author
     Daniel Felipe Gomez Suarez
     
