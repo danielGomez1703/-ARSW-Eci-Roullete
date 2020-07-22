@@ -69,5 +69,5 @@ function LogIn() {
         } else {
             window.alert("verifique su correo/clave");
         }
-    });;
+    });
 }
